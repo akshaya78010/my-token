@@ -4,12 +4,19 @@ MyToken (MTK) is a simple ERC-20–style token built on the Ethereum blockchain 
 It implements all core ERC-20 functions, including transfers, approvals, and delegated transfers via transferFrom.
 This project demonstrates how fungible tokens work on Ethereum at a fundamental level.
 
-Token Details
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Token Details :-
+
 Property	Value
 Name	MyToken
 Symbol	MTK
 Decimals	18
 Total Supply	Set during deployment (example: 1,000,000 MTK)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 What is an ERC-20 Token?
 
 ERC-20 is the Ethereum token standard that defines the basic rules a fungible token must follow.
@@ -31,6 +38,8 @@ Transfer & Approval events
 
 MyToken fully implements these requirements.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 Features
 
 ✔ Standard ERC-20 style implementation
@@ -49,18 +58,21 @@ Features
 
 ✔ Fully tested using RemixIDE
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
 Smart Contract Source Code
 
 The complete Solidity source code is located in:
 
 contracts/MyToken.sol
 
-Deployment Instructions (Remix IDE)
-Step 1 — Open Remix
+Deployment Instructions (Remix IDE):-
+
+-> Step 1 — Open Remix
 
 Visit: https://remix.ethereum.org
 
-Step 2 — Create Contract File
+-> Step 2 — Create Contract File
 
 Create a folder named contracts/
 
@@ -68,7 +80,7 @@ Inside it, create MyToken.sol
 
 Paste the full contract code
 
-Step 3 — Compile
+-> Step 3 — Compile
 
 Open the Solidity Compiler tab
 
@@ -76,7 +88,7 @@ Select compiler version 0.8.x
 
 Click Compile MyToken.sol
 
-Step 4 — Deploy
+-> Step 4 — Deploy
 
 Go to Deploy & Run Transactions
 
@@ -89,35 +101,40 @@ Enter constructor value (example for 1 million MTK):
 
 Click Deploy
 
-How to Use the Token
-Check Balance
+------------------------------------------------------------------------------------------------------------------------------------
+How to Use the Token:- 
+
+-> Check Balance
 balanceOf(address user)
 
 
 Returns the MTK balance of any address.
 
-Transfer Tokens
+-> Transfer Tokens
 transfer(address to, uint256 amount)
 
 
 Example: transfer 100 MTK to another address.
 
-Approve a Spender
+-> Approve a Spender
 approve(address spender, uint256 amount)
 
 
 Allows another address to spend your tokens.
 
-Check Allowance
+-> Check Allowance
 allowance(address owner, address spender)
 
-Delegated Transfer
+-> Delegated Transfer
 transferFrom(address from, address to, uint256 amount)
 
 
 Executed by the approved spender.
 
-Testing Scenarios Executed
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Testing Scenarios Executed:-
+
 ✔ 1. Basic Transfer
 
 Transferred tokens from Account #1 → Account #2
@@ -173,6 +190,7 @@ my-token/
 ├── README.md
 └── LEARNING.md (optional)
 
+----------------------------------------------------------------------------------------------------------------------------------------
 What I Learned
 
 Through building this ERC-20 token, I learned:
